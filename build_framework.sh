@@ -8,7 +8,7 @@ PROJECT_NAME="SmyteSDK"
 TARGET_NAME=${PROJECT_NAME}
 UNIVERSAL_OUTPUTFOLDER="."
 
-# Step 1. Build Device and Simulator versions
+# Step 1. Build Device and Simulator versions of the framework
 xcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR="${BUILD_DIR}" BUILD_ROOT="${BUILD_ROOT}" clean build
 xcodebuild -target ${TARGET_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR="${BUILD_DIR}" BUILD_ROOT="${BUILD_ROOT}" clean build
 
@@ -28,5 +28,5 @@ lipo -create -output "${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJ
 # Step 5. Convenience step to copy the framework to the project's directory
 cp -R "${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework" "${PROJECT_DIR}"
 
-# Step 6. Open the output directory (for convenience)
-open ${UNIVERSAL_OUTPUTFOLDER}
+# Step 6. Open the output directory folder (for convenience)
+# open ${UNIVERSAL_OUTPUTFOLDER}
