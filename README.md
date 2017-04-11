@@ -1,6 +1,6 @@
 ## Background
 
-This repo is for the iOS SDK that clients can use to send events to smyte
+This repo is for the iOS SDK that clients can use to send events to Smyte. The SDK should be built as a framework using ```build_framework.sh``` and imported to subsequent projects.
 
 ## Building the framework
 
