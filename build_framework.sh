@@ -26,7 +26,7 @@ fi
 lipo -create -output "${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}"
 
 # Step 5. Convenience step to copy the framework to the project's directory
-cp -R "${OUTPUT_FOLDER}/${PROJECT_NAME}.framework" "${PROJECT_DIR}"
+# cp -R "${OUTPUT_FOLDER}/${PROJECT_NAME}.framework" "${PROJECT_DIR}"
 
 # Step 6. Open the output directory folder (for convenience)
 # open ${OUTPUT_FOLDER}
