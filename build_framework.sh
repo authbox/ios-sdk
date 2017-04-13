@@ -27,3 +27,4 @@ lipo -create -output "${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}
 
 # Step 5. Remove libswiftRemoteMirror.dylib
 rm ${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/libswiftRemoteMirror.dylib
+rm -rf ${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/Frameworks
