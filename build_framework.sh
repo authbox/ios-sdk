@@ -24,3 +24,6 @@ fi
 
 # Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory
 lipo -create -output "${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}"
+
+# Step 5. Remove libswiftRemoteMirror.dylib
+rm ${OUTPUT_FOLDER}/${PROJECT_NAME}.framework/libswiftRemoteMirror.dylib
