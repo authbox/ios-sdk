@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name         = "SmyteSDK"
+  s.name         = "Smyte"
   s.version      = "0.0.5"
   s.summary      = "SDK for Smyte.com"
 
