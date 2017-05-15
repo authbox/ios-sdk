@@ -2,13 +2,9 @@
 //  Smyte.swift
 //  Smyte
 //
-//  Created by Matthew Knippen on 10/9/16.
-//  Copyright © 2016 Smyte. All rights reserved.
-//
 
 import Foundation
 
-//let rootURL = "http://requestb.in/ya2pnuya"
 let rootURL = "https://api.smyte.com/v2"
 let initURL = rootURL + "/mobile_ping"
 let uniqueID = "com.smyte.unique.id"
