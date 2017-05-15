@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   DESC
 
   s.homepage     = "http://www.smyte.com"
-  s.license      = { type: "Apache License, Version 2.0", file: "LICENSE" }
+  s.license      = "Apache License, Version 2.0"
   s.author       = {  "Smyte" => "support@smyte.com" }
   s.platform     = :ios, "9.0"
 	s.source       = { git: 'https://github.com/smyte/ios-sdk.git', tag: s.version }
