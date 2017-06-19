@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Smyte"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "SDK for Smyte.com"
 
   s.description  = <<-DESC
